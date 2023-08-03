@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+
+
+
+:root{
+    /* fonts */
+    --principal-font: 'Poppins', sans-serif;
+
+
+    /* colors */
+    --color01: #1E1E1E;
+    --color-destaque: #BE8600;
+    --texto-claro: #D9D9D9 ;
+    --texto-m-claro: #C7C7C7;
+}
+
+.carlos-memoji, .guide-buttons{
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #272727;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+header{
+    background-color: #1E1E1E;
+    width: 100vw;
+    font: 25px bold;
+    color: #D9D9D9;
+    padding: 20px;
+    overflow: hidden;
+}
+
+span{
+    animation: letter-animation 5s ease-in-out;
+}
+.carlos{
+    line-height: 32px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.carlos > h1{
+    color: #D9D9D9;
+}
+
+.line1{
+    margin-top: 5px;
+    color: #BE8600;
+    border-color: #BE8600;
+    width: 125px;
+}
+
+.more-about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    color: #D9D9D9;
+    font: 12px;
+
+}
+
+.more-about > a{
+    cursor: pointer;
+    margin-right: 7px;
+    text-decoration: none;
+    color: #BE8600;
+
+}
+
+.line2{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-color: #BE8600;
+    width: 250px;
+}
+
+.more-about > a:hover{
+    color: #8d6301;
+}
+
+.breve-apre{
+    margin-left: 20px;
+    color: #D9D9D9;
+}
+
+/* comfigs contato btn */
+.btn-class-name {
+    margin-top: 20px;
+    --primary: 80, 180, 250;
+    --secondary: 255, 255, 255;
+    margin-left: 20px;
+    border-radius: .6em;
+    transition: .3s;
+    background-color: #BE8600;
+    color:#D9D9D9;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 45px;
+}
+
+.btn-class-name:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 0 0 5px #e09e03, .5;
+}
+
+.btn-class-name:active {
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 0 5px rgb(var(--secondary));
+}
+
+@keyframes letter-animation { 
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
+}
