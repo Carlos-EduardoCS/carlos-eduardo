@@ -5,7 +5,7 @@
     .container{
         justify-content: space-between;
         display: flex;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .in-container{
@@ -23,6 +23,7 @@
         padding: 70px;
         border-radius: 50%;
         margin-left: 50%;
+        margin-top: 25px;
         height: 500px;
         width: 500px;
     }
@@ -30,26 +31,32 @@
     .guide-buttons{
         display: block;
         position: absolute;
-        margin-left: 95vw;
-        margin-top: 100px;
+        position: fixed;
+        z-index: 1;
+        margin-left: 93vw;
+        margin-top: 150px;
     }
 
 
     .btn1{
         margin-bottom: 10px;
-        background-color: #BE8600;
+        background-color: #19191ebd;
         padding: 20px;
-        line-height: 2px;
+        line-height: 5px;
         width: 50px;
         border-radius: 50%;        
         border: none;
     }
 
+    .btn1 > i{
+        margin-left: -4px;
+    }
+
     .btn2{
         margin-bottom: 10px;
-        background-color: #19191e;
+        background-color: #19191ebd;
         padding: 20px;
-        line-height: 2px;
+        line-height: 5px;
         width: 50px;
         border-radius: 50%;        
         border: none;
@@ -57,20 +64,13 @@
 
 
     .btn1:hover{
-        transition: 1s ease-in-out;
+        transition: 2.5s ease-in-out;
         background-color:#BE8600 ;
-    }
-
-    .btn1:active{
-        background-color: #BE8600;
     }
 
     .btn2:hover{
-        transition: 1s ease-in-out;
+        transition: 2.5s ease-in-out;
         background-color:#BE8600 ;
     }
 
-    .btn2:active{
-        background-color: #BE8600;
-    }
 }

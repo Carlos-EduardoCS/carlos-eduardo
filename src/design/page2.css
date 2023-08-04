@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#sobre__mim{
+    padding: 50px;
+    background-color: #19191e;
+}
+
+.container_sobremim > h1{
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.container_sobremim{
+    text-align: center;
+}
+
+.card1, .card2, .card3{  
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(243, 240, 240);
+    border-radius: 25px;
+    background-color: #212128;
+    color: #fff;
+}
+
+.card-img{
+    margin: 0 auto;
+    height: 200px;
+    width: 250px;
+}
+
+.card-img2{
+    margin: 0 auto 0 -12px;
+    height: 200px;
+    width: 150px;
+}
+
+.card > p{
+    font-size: 18px;
+}

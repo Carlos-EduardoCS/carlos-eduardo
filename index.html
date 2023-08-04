@@ -6,6 +6,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="src/design/index.css">
     <link rel="stylesheet" href="src/design/mediaquery.css">
+    <link rel="stylesheet" href="src/design/page2.css">
+    <link rel="stylesheet" href="src/design/page2-mediaq.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
@@ -13,21 +15,25 @@
 </head>
 <body>
     <main>
-        
+        <div id="top"></div>
         
         <div class="guide-buttons">
-            <a href="">
-                <button class="btn1">
-                    <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
-                </button>
+            <a href="#top">
+                <abbr title="Home">
+                    <button class="btn1">
+                        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                </abbr>
             </a>
 
                 <br>
 
-            <a href="">
-                <button class="btn2">
-                    <i class="fa-solid fa-file fa-lg" style="color: #ffffff;"></i>
-                </button>
+            <a href="#sobre__mim">
+                <abbr title="Ver Hard Skills">
+                    <button class="btn2">
+                        <i class="fa-solid fa-file fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                </abbr>
             </a>
         </div>
 
@@ -43,9 +49,13 @@
                 <div class="more-about" >
                     Desenvolvedor e Programador Front end, <br>
                     <strong>Javascript e React JS </strong> <br>
-                    <a class="fisrt-child" href=""> Github </a>
-                    <a href=""> Linkedin </a>
-                    <a href=""> Curriculo </a>
+                    <a class="fisrt-child" href=""> Github <i class="fa-brands fa-github fa-sm" style="color: #BE8600;"></i> 
+                    </a>
+
+                    <a href=""> Linkedin <i class="fa-brands fa-linkedin fa-sm" style="color: #BE8600;"></i>
+                    </a>
+
+                    <a href=""> Curriculo <i class="fa-solid fa-note-sticky fa-sm" style="color: #BE8600;"></i> </a>
                 </div>
                 <hr class="line2">
                 <div class="breve-apre">
@@ -59,6 +69,45 @@
                 </button>
             </div>
             <img  class="carlos-memoji" src="src/imgs/carlos-memoji.png" alt="">
+        </div>
+
+        <!-- page 2 -->
+
+        <div id="sobre__mim" class="sobremim">
+            <div class="container_sobremim">
+            <h1>
+                Sobre mim
+            </h1>
+
+            <div class="cards">
+
+                <div class="card1">
+                    <div class="card-img">
+                        <img class="card-img"
+                        src="src/imgs/Humaaans - 2 Characters (3).png" alt="">
+                    </div>
+                    <p>Tenho uma otima cuminicação e trabalho em equipe.</p>
+                </div>
+
+                <div class="card2">
+                    <div class="card-img">
+                        <img
+                        class="card-img2" 
+                        src="src/imgs/Humaaans - Wireframe.png" alt="">
+                    </div>
+                    <p>Uso React como minha linguagem principal para meus projetos.</p>
+                </div>
+
+                <div class="card3">
+                    <div class="card-img">
+                        <img class="card-img" src="src/imgs/Humaaans - 1 Character.png" alt="">
+                    </div>
+                    <p>Desenvolvimento Mobile focado em Front End</p>
+                </div>
+            </div>
+
+            </div>
+            
         </div>
     </main>
 </body>
