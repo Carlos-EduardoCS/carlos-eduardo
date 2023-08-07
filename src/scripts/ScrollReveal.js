@@ -7,6 +7,13 @@ window.sr = ScrollReveal({
     
 });
 
+
+
+sr.reveal('.btn-class-name', {
+    delay: 900,
+    origin: 'left',
+    duration: 1000,
+});
 sr.reveal('.carlos', {
     delay: 900,
     origin: 'left',

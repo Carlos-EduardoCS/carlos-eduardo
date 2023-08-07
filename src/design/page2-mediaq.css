@@ -7,7 +7,7 @@
 
     .card-img{
         margin: 0 auto;
-        margin-left: 5px;
+        margin-left: 20px;
         height: 200px;
         width: 250px;
     }
@@ -30,9 +30,10 @@
         color: #fff;
     }
 
-    .card1:hover, .card2:hover,.card3:hover{
-        transition: 1.5s ease-in;
-        box-shadow: 12px 10px #be85008b;
+    .card1:hover, .card2:hover,.card3:hover {
+        transform: scale(1.05);
+        transition: 1s ease-in;
+        box-shadow: 12px 10px #be850033;
         cursor: pointer;
     }
 }
