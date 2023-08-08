@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.mac_desk_only{
+    display: none;
+}
+
+.container__projetos{
+    padding: 20px;
+    text-align: center;
+}
+.container__projetos > h1{
+    color: #Fff;
+    margin-bottom: 20px;
+}
+
+.projeto1{
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    background-color:  #212128;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.text_projeto1{
+    padding: 15px;
+    color: #Fff;
+    background-color: #2727278a;
+    border-radius: 1px solid #fff;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+}
+
+.text_projeto1 > p > a{
+    text-decoration: none;
+    color: #BE8600;
+
+}
+
+.text_projeto1 > h1{
+    text-transform: uppercase;
+}
+
+.ipho14_mob_only{
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+}
+
+.projeto1:hover{
+    box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.text_projeto1 > p > a:hover{
+    transition: .2s ease-in-out;
+    color: #efa804;
+}

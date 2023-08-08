@@ -79,6 +79,45 @@ sr.reveal('', {
     duration: 1000,
 });
 
+sr.reveal('.ipho14_mob_only', {
+    delay: 2000,
+    origin: 'top',
+    duration: 1000,
+});
+sr.reveal('.mac_desk_only', {
+    delay: 1100,
+    origin: 'top',
+    duration: 1000,
+});
+
+sr.reveal('.text_projeto1', {
+    delay: 1700,
+    origin: 'left',
+    duration: 1000,
+});
+
+sr.reveal('.projeto1', {
+    delay: 900,
+    origin: 'top',
+    duration: 1000,
+});
+
+sr.reveal('.h1_proejtos', {
+    delay: 900,
+    origin: 'bottom',
+    duration: 1000,
+});
+
+sr.reveal('.h1_text_proejtos', {
+    delay: 1000,
+    origin: 'top',
+    duration: 1000,
+});
+
+
+
+
+
 
 
 

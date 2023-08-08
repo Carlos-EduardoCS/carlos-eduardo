@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 916px){
+
+    .projeto1{
+        width: 350px;
+    }
+
+    .ipho14_mob_only{
+        display: none;
+    }
+
+    .mac_desk_only{
+        display: block;
+        margin: 20px auto;
+        width: 250px;
+    }
+
+    .inner_projetos{
+        justify-content: space-around;
+        gap: -10px;
+        display: flex;
+    }
+}
