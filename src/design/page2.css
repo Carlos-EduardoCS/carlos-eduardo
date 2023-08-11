@@ -19,7 +19,7 @@
     height: 410px;
     padding: 50px;
     margin-top: 20px;
-    border: 1px solid rgb(243, 240, 240);
+    border: 1px solid rgba(255, 255, 255, 0.412);   
     border-radius: 25px;
     background-color: #212128;
     color: #fff;

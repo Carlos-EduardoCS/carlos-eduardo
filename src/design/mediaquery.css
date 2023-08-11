@@ -19,13 +19,13 @@
     .carlos-memoji{
         display: block;
         position: absolute;
-        background-color: #292931;
+        background-color: #15151a;
         padding: 70px;
         border-radius: 50%;
         margin-left: 50%;
         margin-top: 25px;
-        height: 500px;
-        width: 500px;
+        height: 530px;
+        width: 530px;
     }
 
     .guide-buttons{

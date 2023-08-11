@@ -114,6 +114,14 @@ sr.reveal('.h1_text_proejtos', {
     duration: 1000,
 });
 
+sr.reveal('.box', {
+    delay: 1000,
+    origin: 'bottom',
+    duration: 1000,
+});
+
+
+
 
 
 

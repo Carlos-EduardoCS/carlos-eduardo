@@ -18,6 +18,7 @@
     margin: 0 auto;
     width: 300px;
     background-color:  #212128;
+    border: 1px solid rgba(255, 255, 255, 0.412);   
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -28,6 +29,7 @@
     background-color: #2727278a;
     border-radius: 1px solid #fff;
     height: 250px;
+    border: 1px solid  #2727278a;   
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
     border-radius: 10px;
 }
