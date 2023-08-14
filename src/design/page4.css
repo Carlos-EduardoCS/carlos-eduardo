@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.hard_skils{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .contaianer__hardskils{
     text-align: center;
 }

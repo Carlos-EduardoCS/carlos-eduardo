@@ -1,39 +1,33 @@
 @media screen and (min-width: 916px){
+    .sobremim{
+        margin-top: 100px;
+        margin-bottom   : 100px;
+    }
+
     .cards{
         display: flex;
         justify-content: space-around;
-        gap: 15px;
+        gap: 10px;
+        padding: 20px;
     }
 
-    .card-img{
-        margin: 0 auto;
-        margin-left: 20px;
-        height: 200px;
-        width: 250px;
+    .about_me{
+        margin-top: 30px;
+        color: white;
     }
     
-    .card-img3{
-        margin: 0 auto;
-        margin-left: 50px;
-        height: 200px;
-        width: 130px;
+    .carlos__format__ball{
+        margin-top: -60px;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
     }
-
-    .card1, .card2, .card3{  
+    .container_sobremim{
+        padding: 20px;
+        border: 1px solid white;
         text-align: center;
-        padding: 50px;
-        margin-top: 20px;
-        width: 500px;
-        border: 1px solid rgba(255, 255, 255, 0.412);   
-        border-radius: 25px;
-        background-color: #212128;
-        color: #fff;
     }
+    
+    
 
-    .card1:hover, .card2:hover,.card3:hover {
-        box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.125);
-        cursor: pointer;
-        transition: .5s ease-in-out;
-        transform: scale(1.05);
-    }
 }

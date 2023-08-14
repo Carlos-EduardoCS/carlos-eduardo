@@ -55,23 +55,18 @@ sr.reveal('button', {
     duration: 1000,
 });
 
-sr.reveal('.card1', {
+sr.reveal('.cards', {
     delay: 950,
     origin: 'top',
     duration: 900,
 });
 
-sr.reveal('.card2', {
+sr.reveal('.carlos__format__ball', {
     delay: 1050,
-    origin: 'top',
+    origin: 'left',
     duration: 900,
 });
 
-sr.reveal('.card3', {
-    delay: 1100,
-    origin: 'top',
-    duration: 900,
-});
 
 sr.reveal('', {
     delay: 1100,
@@ -116,9 +111,24 @@ sr.reveal('.h1_text_proejtos', {
 
 sr.reveal('.box', {
     delay: 1000,
+    origin: 'top',
+    duration: 1000,
+});
+
+sr.reveal('.itens', {
+    delay: 1000,
+    origin: 'top',
+    duration: 1000,
+});
+
+sr.reveal('.text__inner__footer', {
+    delay: 1000,
     origin: 'bottom',
     duration: 1000,
 });
+
+
+
 
 
 
