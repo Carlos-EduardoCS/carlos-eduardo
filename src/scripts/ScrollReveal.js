@@ -62,9 +62,9 @@ sr.reveal('.cards', {
 });
 
 sr.reveal('.carlos__format__ball', {
-    delay: 1050,
+    delay: 900,
     origin: 'left',
-    duration: 900,
+    duration: 700,
 });
 
 
@@ -75,7 +75,7 @@ sr.reveal('', {
 });
 
 sr.reveal('.ipho14_mob_only', {
-    delay: 2000,
+    delay: 1500,
     origin: 'top',
     duration: 1000,
 });
@@ -86,7 +86,7 @@ sr.reveal('.mac_desk_only', {
 });
 
 sr.reveal('.text_projeto1', {
-    delay: 1700,
+    delay: 1400,
     origin: 'left',
     duration: 1000,
 });

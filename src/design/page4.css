@@ -30,6 +30,10 @@
     border-bottom: 1px solid #60607762;
 }
 
+.linguagem{
+    display: flex;
+}
+
 .row{
     margin-top: 10px;
     margin-left: 20px;
@@ -38,14 +42,10 @@
     border: 1px solid #606077 ;
 }
 
-.linguagem{
-    display: flex;
-}
-
 .row2{
     margin-top: 10px;
-    margin-left: 20px;
-    width: 240px;
+    margin-left: 30px;
+    width: 250px;
     height: 1px;
     border: 1px solid #606077 ;
 }
@@ -53,7 +53,7 @@
 .row3{
     margin-top: 10px;
     margin-left: 20px;
-    width: 200px;
+    width: 150px;
     height: 1px;
     border: 1px solid #606077 ;
 }
@@ -61,7 +61,7 @@
 .row4{
     margin-top: 10px;
     margin-left: 20px;
-    width: 180px;
+    width: 110px;
     height: 1px;
     border: 1px solid #606077 ;
 }
@@ -69,7 +69,7 @@
 .row5{
     margin-top: 10px;
     margin-left: 20px;
-    width: 100px;
+    width: 170px;
     height: 1px;
     border: 1px solid #606077 ;
 }
