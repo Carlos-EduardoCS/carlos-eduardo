@@ -67,7 +67,7 @@ sr.reveal('.carlos__format__ball', {
     duration: 700,
 });
 
-
+// empty v
 sr.reveal('', {
     delay: 1100,
     origin: 'top',
