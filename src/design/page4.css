@@ -69,7 +69,31 @@
 .row5{
     margin-top: 10px;
     margin-left: 20px;
-    width: 170px;
+    width: 180px;
+    height: 1px;
+    border: 1px solid #606077 ;
+}
+
+.row6{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height: 1px;
+    border: 1px solid #606077 ;
+}
+
+.row7{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 80px;
+    height: 1px;
+    border: 1px solid #606077 ;
+}
+
+.row8{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70px;
     height: 1px;
     border: 1px solid #606077 ;
 }
