@@ -1,280 +1,125 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="src/design/index.css">
-    <link rel="stylesheet" href="src/design/mediaquery.css">
-    <link rel="stylesheet" href="src/design/page2.css">
-    <link rel="stylesheet" href="src/design/page2-mediaq.css">
-    <link rel="stylesheet" href="src/design/page3.css">
-    <link rel="stylesheet" href="src/design/page3-mediaq.css">
-    <link rel="stylesheet" href="src/design/page4.css">
-    <link rel="stylesheet" href="src/design/page4-mediaq.css">
-    <link rel="stylesheet" href="src/design/footer.css">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#141516">
+    <meta name="description" content="Portfólio de Carlos Eduardo. Conheça meus projetos de desenvolvimento web, as tecnologias que utilizo e entre em contato.">
+    <meta name="color-scheme" content="dark">
+    <title>Carlos Eduardo — Desenvolvimento web</title>
+    <link rel="icon" type="image/png" href="imgs/a679bdee-3804-4d5f-9d26-371b37834f6f.png">
+    <link rel="stylesheet" href="src/design/style.css">
+    <link rel="stylesheet" href="src/design/media-queries.css">
+    <script src="src/scripts/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#inicio" aria-label="Carlos Eduardo, início">carlos.eduardo<span aria-hidden="true">/</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>
+          <span class="menu-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+          <a class="header-github external-link" href="https://github.com/Carlos-EduardoCS" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+      <main id="conteudo">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+          <div class="hero-main">
+            <p class="eyebrow">Carlos Eduardo · Desenvolvimento web</p>
+            <h1 id="hero-title">Ideias em<br><span>código.</span></h1>
+            <a class="button button-primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-aside">
+            <p>Interfaces, experiências e projetos que mostram como eu penso e desenvolvo para a web.</p>
+            <a class="text-link" href="#sobre">Um pouco sobre mim <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
 
-    <link rel="shortcut icon" href="src/imgs/carlos-memoji.png" type="image/x-icon">
+        <section class="projects section" id="projetos" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <h2 id="projects-title">Projetos selecionados<span class="accent">.</span></h2>
+            <span class="eyebrow section-index">01 / Explore o código</span>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" aria-labelledby="universe-title">
+              <div class="project-topline"><span class="eyebrow">01 / Interface web</span><span class="project-number" aria-hidden="true">U.</span></div>
+              <div class="project-copy">
+                <p class="project-category">Estudo de interface</p>
+                <h3 id="universe-title">Universe Login</h3>
+                <p>Uma tela de login com tema espacial para um site fictício. Um exercício de composição visual, formulários e adaptação da interface para diferentes telas.</p>
+              </div>
+              <div class="project-bottom">
+                <ul class="tags" aria-label="Tecnologias do Universe Login"><li>HTML</li><li>CSS</li></ul>
+                <a class="text-link" href="https://github.com/Carlos-EduardoCS/universe-login" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do Universe Login no GitHub">Ver código <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
 
-    <title> Carlos Eduardo </title>
-</head>
-<body>
-    <main>
-        <div id="top"></div>
-        
-        <div class="guide-buttons">
-            <a href="#top">
-                <abbr title="Home">
-                    <button class="btn1">
-                        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
-                    </button>
-                </abbr>
-            </a>
+            <article class="project-card" aria-labelledby="fylo-title">
+              <div class="project-topline"><span class="eyebrow">02 / Landing page</span><span class="project-number" aria-hidden="true">F.</span></div>
+              <div class="project-copy">
+                <p class="project-category">Desafio Frontend Mentor</p>
+                <h3 id="fylo-title">Fylo</h3>
+                <p>Uma landing page para um serviço fictício de armazenamento de arquivos. Prática de HTML e CSS a partir de uma referência visual, com seções de apresentação e formulários.</p>
+              </div>
+              <div class="project-bottom">
+                <ul class="tags" aria-label="Tecnologias do Fylo"><li>HTML</li><li>CSS</li></ul>
+                <a class="text-link" href="https://github.com/Carlos-EduardoCS/fylo-landing-page" target="_blank" rel="noopener noreferrer" aria-label="Ver o código do Fylo no GitHub">Ver código <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <a class="all-projects text-link" href="https://github.com/Carlos-EduardoCS?tab=repositories" target="_blank" rel="noopener noreferrer">Mais projetos no GitHub <span aria-hidden="true">↗</span></a>
+        </section>
 
-                <br>
-
-            <a href="#sobre__mim">
-                <abbr title="Sobre mim">
-                    <button class="btn2">
-                        <i class="fa-solid fa-file fa-lg" style="color: #ffffff;"></i>
-                    </button>
-                </abbr>
-            </a>
-
-            <br>
-
-            <a href="#__projetos">
-                <abbr title="Ver Projetos">
-                    <button class="btn1">
-                        <i class="fa-solid fa-helmet-safety fa-lg" style="color: #ffffff;"></i>
-                    </button>
-                </abbr>
-            </a>
-
-            <a href="#hard__skils">
-                <abbr title="Ver Skils">
-                    <button class="btn1">
-                        <i class="fa-solid  fa-keyboard fa-lg" style="color: #ffffff;"></i>
-                    </button>
-                </abbr>
-            </a>
-        </div>
-
-        <div class="container">
-            <div class="in-container">
-                <div class="carlos">
-                    <h1>
-                        Carlos <br>
-                        Eduardo
-                    </h1>
-                    <hr class="line1">
-                </div>
-                <div class="more-about" >
-                    Desenvolvedor e Programador Front end. <br>
-                    <strong>Javascript e React JS </strong> <br>
-                    <a class="fisrt-child" href="https://github.com/Carlos-EduardoCS" target="_blank"> Github <i class="fa-brands fa-github fa-sm" style="color: #BE8600;"></i> 
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/carlos-eduardo-04656a26a/" target="_blank"> Linkedin <i class="fa-brands fa-linkedin fa-sm" style="color: #BE8600;"></i>
-                    </a>
-
-                    <a href="https://docs.google.com/document/d/e/2PACX-1vTQWwnbFWiX5maQTeQAQ_IqCIHGhGaysFNZJTVlsk8bo2OEQbsxe2hHuI8TzSciQ-R4n9lKoslRWtrT/pub" target="_blank"> Curriculo <i class="fa-solid fa-note-sticky fa-sm" style="color: #BE8600;"></i> </a>
-                </div>
-                <hr class="line2">
-                <div class="breve-apre">
-                    <p>
-                        Fala aí, 👋 meu nome é Carlos, tenho 21 anos e sou desenvolvedor e programador.
-                    </p>
-                </div>
-                <a href="https://api.whatsapp.com/send/?phone=5519996643835&text&type=phone_number&app_absent=0" target="_blank">
-                    <abbr title="Para projetos clique aqui.">
-                        <button class="btn-class-name">
-                            Fale comigo
-                        </button>
-                    </abbr>
-                </a>
+        <section class="about section" id="sobre" aria-labelledby="about-title">
+          <div class="section-heading"><h2 id="about-title">Por trás do código<span class="accent">.</span></h2><span class="eyebrow section-index">02 / Sobre mim</span></div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <h3>Olá, eu sou<br>Carlos Eduardo.</h3>
+              <p>Gosto de novos desafios e de transformar ideias em experiências para a web. Meus projetos são uma forma de colocar o aprendizado em prática e explorar diferentes possibilidades de interface.</p>
+              <p>Por aqui, compartilho uma seleção do que construo. No GitHub, você pode acompanhar o código e os meus estudos.</p>
+              <a class="text-link" href="https://www.linkedin.com/in/carlos-eduardo-04656a26a/" target="_blank" rel="noopener noreferrer">Conheça meu perfil no LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
-            <img  class="carlos-memoji" src="src/imgs/carlos-memoji.png" alt="">
-        </div>
-
-        <!-- page 2 -->
-
-        <div id="sobre__mim" class="sobremim">
-            <div class="container_sobremim">
-            <h1>
-                Sobre mim
-            </h1>
-
-            <div class="cards">
-                <img  class="carlos__format__ball" src="src/imgs/carlos.png" alt="Carlos Eduardo">
-                <div class="about_me">
-                    
-                    <p>
-                        Meu nome é Carlos Eduardo tenho 21 anos, moro na cidade de Sumaré, em São Paulo. <br>
-                        Tenho uma ótima comunicação com a equipe, tornando assim o trabalho em conjunto mais facil. <br>
-                        Meu trabalho é focado em front-end, tanto mobile quanto web. <br>
-                        Gosto de ser versátil, e de ambientes desafiadores com várias propostas a serem compridas.  
-                    </p>
-                </div>
+            <div class="technology-panel">
+              <h3>Tecnologias</h3>
+              <ul class="technology-list" aria-label="Tecnologias presentes nos meus projetos e estudos">
+                <li><span>HTML</span><span class="technology-type">Estrutura</span></li>
+                <li><span>CSS</span><span class="technology-type">Estilo</span></li>
+                <li><span>JavaScript</span><span class="technology-type">Interação</span></li>
+                <li><span>React</span><span class="technology-type">Interfaces</span></li>
+                <li><span>TypeScript</span><span class="technology-type">Tipagem</span></li>
+                <li><span>Bootstrap</span><span class="technology-type">Componentes</span></li>
+              </ul>
             </div>
-            </div>
-        </div>
-        <!-- page 3 -->
-        <div id="__projetos" class="projetos">
-            <div class="container__projetos">
-                <h1 class="h1_proejtos">
-                    Trabalhos
-                </h1>
-                <div class="inner_projetos">
-                    <div class="projeto1">
-                        <img class="ipho14_mob_only" src="src/imgs/netflix__mockup__ipho14.png" alt="Netflix Clone">
+          </div>
+        </section>
 
-                        <img class="mac_desk_only" src="src/imgs/netflix__mockup__mac.png" alt="">
-                        <div class="text_projeto1">
-                            <h1 class="h1_text_proejtos"> Netflix </h1>
-                            <p>
-                                Clone da pagina de login da Netflix &copy; <br>
-                                Pagina Desenvolvida com HTML e CSS. <br>
-                            </p>
-                            <p> 
-                                <a href="https://br-sp-netflix.netlify.app/" target="_blank">Clique aqui</a> para acessar
-                            </p>
-                        </div>
-                    </div>
+        <section class="contact section" id="contato" aria-labelledby="contact-title">
+          <div class="contact-copy"><p class="eyebrow">03 / Próximo passo</p><h2 id="contact-title">Vamos<br><span>conversar?</span></h2><p>Tem uma ideia, uma oportunidade ou quer conhecer melhor o meu trabalho? Entre em contato.</p></div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://api.whatsapp.com/send/?phone=5519996643835&amp;text=Ol%C3%A1%2C%20Carlos!%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/carlos-eduardo-04656a26a/" target="_blank" rel="noopener noreferrer">Conectar no LinkedIn <span aria-hidden="true">↗</span></a>
+            <a class="resume-link text-link" href="https://api.whatsapp.com/send/?phone=5519996643835&amp;text=Ol%C3%A1%2C%20Carlos!%20Gostaria%20de%20conhecer%20seu%20curr%C3%ADculo." target="_blank" rel="noopener noreferrer">Solicitar currículo <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </main>
 
-                    <div class="projeto1">
-                        <img  class="ipho14_mob_only" src="src/imgs/mario__mockup_ipho14.png" alt="">
-
-                        <img class="mac_desk_only" src="src/imgs/mario__mockup__mac.png" alt="">
-                        <div class="text_projeto1">
-                            <h1 class="h1_text_proejtos">
-                                Mário
-                            </h1>
-                            <p>
-                                Mário foi o primeiro mini-game que desenvolvi. <br>
-                                Desenvolvido com JavaScript, CSS e HTML.
-                            </p>
-                            <p>
-                                <a href="https://carlos-eduardocs.github.io/mario-game/" target="_blank">Clique aqui</a> 
-                                para acessar
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="projeto1">
-                        <img class="ipho14_mob_only" src="src/imgs/nike__mockup__ipho14.png" alt="">
-
-                        <img class="mac_desk_only" src="src/imgs/nikemockup__mac.png" alt="">
-                        <div class="text_projeto1">
-                            <h1 class="h1_text_proejtos">
-                                Nike
-                            </h1>
-                            <p>
-                                Clone do site de vendas da Nike &copy;
-                                Desenvolvido com HTML, CSS e JavaScript.
-                                <p>
-                                <a href="https://nike-br.netlify.app/" target="_blank">
-                                    Clique aqui
-                                </a>
-                                para acessar
-                                </p>
-                            </p>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="projeto1">
-                        <img  class="ipho14_mob_only" src="src/imgs/pokemons_mockup_ipho14.png" alt="">
-
-                        <img class="mac_desk_only" src="src/imgs/pokenmons_mockup_mac.png" alt="">
-                        <div class="text_projeto1">
-                            <h1 class="h1_text_proejtos">
-                                Listagem de Pokémons
-                            </h1>
-                            <p>
-                                Liatagem de pokémons foi umas primeiras paginas que desenvolvi. <br>
-                                Feito com JavaScript, CSS e HTML.
-                            </p>
-                            <p>
-                                <a href="https://carlos-eduardocs.github.io/projeto-pokemon/" target="_blank">Clique aqui</a> 
-                                para acessar
-                            </p>
-                        </div>
-                    </div>
-                    -->
-                </div>
-            </div>
-        </div>
-
-        <!--  page4  -->
-        <div id="hard__skils" class="hard_skils">
-            <div class="contaianer__hardskils">
-                <h1>
-                    Hard Skils
-                </h1>
-                <div class="box">   
-                    <div class="linguagem">
-                        <p>HTML</p>
-                        <hr class="row">
-                    </div>
-                    <div class="linguagem">
-                        <p>CSS</p>
-                        <hr class="row2">
-                    </div>
-                    <div class="linguagem">
-                        <p>JavaScript</p>
-                        <hr class="row3">
-                    </div>
-                    <div class="linguagem">
-                        <p>BootStrap</p>
-                        <hr class="row4">
-                    </div>
-                    <div class="linguagem">
-                        <p> React JS </p>
-                        <hr class="row5">
-                    </div>
-                    <div class="linguagem">
-                        <p> AXIOS </p>
-                        <hr class="row6">
-                    </div>
-                    <div class="linguagem">
-                        <p> Figma </p>
-                        <hr class="row7">
-                    </div>
-                    <div class="linguagem">
-                        <p> Canva </p>
-                        <hr class="row8">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
-            <div class="text__inner__footer">
-                <h1>
-                    Obrigado pela visita
-                </h1>
-                <p>
-                    Você pode me acompanhar pelas redes socias abaixo. <br>
-                </p>
-            </div>
-            <div class="social__media">
-
-                <a href="https://www.instagram.com/c.carvallho_/" target="_blank" class="itens">
-                    <i class="fa-brands fa-instagram fa-xl" style="color: #49495b;"></i>
-                </a>
-
-                <a href="https://www.facebook.com/carlos.francisquinho.9" target="_blank" class="itens">
-                    <i class="fa-brands fa-facebook fa-xl" style="color: #49495b;"></i>
-                </a>
-                
-                <a href="#" target="_blank" class="itens">
-                    <i class="fa-brands fa-twitter fa-xl" style="color: #49495b;"></i>
-                </a>
-            </div>
-        </footer>
-    </main>
-</body>
-
-<script src="src/scripts/ScrollReveal.js"></script>
+      <footer class="site-footer">
+        <a class="footer-name" href="#inicio">Carlos Eduardo<span class="accent">.</span></a>
+        <nav class="social-links" aria-label="Redes sociais">
+          <a href="https://github.com/Carlos-EduardoCS" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/c.carvallho_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/carlos.francisquinho.9" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://twitter.com/carloscarv4lho" target="_blank" rel="noopener noreferrer">X</a>
+        </nav>
+        <a class="back-to-top" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+      </footer>
+    </div>
+  </body>
 </html>

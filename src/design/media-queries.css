@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*
+ * Layout mobile-first. Os estilos de celulares pequenos ficam em style.css.
+ * Referencia: https://getbootstrap.com/docs/5.3/layout/breakpoints/
+ * Principios: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+ *
+ * Faixas de layout, nao deteccao do tipo fisico de aparelho:
+ * celulares < 768px; tablets >= 768px; PCs >= 992px; telas maiores >= 1400px.
+ * 36, 48, 62, 75 e 87.5rem = 576, 768, 992, 1200 e 1400px com fonte inicial
+ * de 16px. Uma fonte inicial maior posterga as colunas para preservar a leitura.
+ */
+
+/* Celulares maiores / pequenas janelas: >= 576px no padrao. */
+@media screen and (min-width: 36rem) {
+  :root { --page-gutter: 1.5rem; --page-max-width: 33.75rem; }
+  .site-header { padding-block: 1.25rem; }
+  .hero { padding-top: 3.75rem; }
+  .hero h1 { font-size: clamp(4.5rem, 13vw, 6rem); }
+  .project-card { padding: 1.75rem; }
+  .project-copy h3 { font-size: 2.25rem; }
+  .button { padding-inline: 1.2rem; gap: 1.5rem; }
+}
+
+/* Tablets / janelas medias: >= 768px no padrao. */
+@media screen and (min-width: 48rem) {
+  :root { --page-gutter: 2rem; --page-max-width: 45rem; }
+  .site-header { gap: 1rem 1.5rem; padding-block: 1.5rem; }
+  .primary-navigation { flex-direction: row; flex-basis: auto; flex-wrap: wrap; margin-left: auto; gap: .5rem; }
+  .primary-navigation a { padding-inline: .6rem; }
+  .hero { padding-block: 4rem 3.5rem; }
+  .hero h1 { font-size: clamp(5rem, 11vw, 6.5rem); }
+  .hero-aside { max-width: 38rem; }
+  .section-heading { margin-bottom: 1.75rem; }
+  .section-index { text-align: right; }
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .project-card { padding: 1.5rem; }
+  .project-copy h3 { font-size: 2rem; }
+  .about { margin-top: 4.5rem; }
+  .about-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem; }
+  .contact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 4.5rem; padding-block: 2.5rem 3rem; }
+  .contact h2 { font-size: clamp(2.75rem, 6vw, 3.7rem); }
+  .contact-actions { max-width: 22rem; justify-self: end; }
+}
+
+/* PCs/notebooks e tablets amplos: >= 992px no padrao. */
+@media screen and (min-width: 62rem) {
+  :root { --page-max-width: 60rem; }
+  .site-header { padding-block: 1.85rem; }
+  .wordmark { font-size: 1.2rem; }
+  .primary-navigation { gap: 1rem; }
+  .header-github { margin-inline-start: 1rem; }
+  .hero { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 3rem; padding-block: 4.5rem; }
+  .hero h1 { font-size: clamp(5rem, 8.5vw, 7rem); margin-block: 1.3rem 2.3rem; }
+  .hero-aside { max-width: 21rem; justify-self: end; padding-bottom: .6rem; }
+  .hero-aside p { font-size: 1.125rem; }
+  .hero-aside .text-link { margin-top: 1.8rem; }
+  .project-card { padding: 1.85rem; }
+  .project-copy { margin-top: 2.2rem; }
+  .project-copy h3 { font-size: 2.5rem; }
+  .about-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 4rem; }
+  .contact { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 3rem; }
+  .contact h2 { font-size: clamp(3.25rem, 6vw, 4.8rem); }
+  .site-footer { align-items: center; gap: 1rem 2rem; }
+  .footer-name { padding: 0; }
+  .social-links { flex-basis: auto; order: 0; gap: 1.25rem; }
+  .back-to-top { margin-left: 0; }
+}
+
+/* PCs com janelas amplas: >= 1200px no padrao. */
+@media screen and (min-width: 75rem) {
+  :root { --page-gutter: 3rem; --page-max-width: 71.25rem; }
+  .primary-navigation { gap: 1.4rem; }
+  .hero { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 4rem; padding-block: 5.5rem 4.75rem; }
+  .hero h1 { font-size: clamp(6rem, 9vw, 8.5rem); }
+  .section-heading { margin-bottom: 2rem; }
+  .project-card { padding: 2.1rem; }
+  .project-copy h3 { font-size: 2.7rem; }
+  .about { margin-top: 5.5rem; }
+  .about-grid { gap: 6rem; }
+  .contact { margin-top: 6rem; padding-block: 3rem 4rem; }
+  .contact h2 { font-size: clamp(4rem, 6vw, 5.7rem); }
+}
+
+/* Telas maiores, incluindo janelas Full HD e 4K: >= 1400px no padrao. */
+@media screen and (min-width: 87.5rem) {
+  :root { --page-max-width: 82.5rem; }
+  .hero { padding-block: 6rem 5.5rem; }
+  .hero h1 { font-size: 8.5rem; }
+  .project-grid { gap: 1.5rem; }
+  .project-card { padding: 2.5rem; }
+  .about-grid { gap: 7rem; }
+  /* O limite do container e os textos em ch evitam linhas extensas. */
+}
+
+/* Preferencia de acessibilidade, independente do dispositivo. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
